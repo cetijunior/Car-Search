@@ -11,6 +11,14 @@
   font-family: "Manrope", sans-serif;
 }
 
+.dark-bg {
+  @apply bg-[#1a202c] text-[#cbd5e0] border-[#4a5568];
+}
+
+body {
+  @apply dark-bg;
+}
+
 /* START: General styles */
 .max-width {
   @apply max-w-[1440px] mx-auto;
@@ -43,11 +51,11 @@
 }
 
 .hero__title {
-  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] text-white font-extrabold;
 }
 
 .hero__subtitle {
-  @apply text-[27px] text-black-100 font-light mt-5;
+  @apply text-[27px] text-gray-300 font-light mt-5;
 }
 
 .hero__image-container {
@@ -66,7 +74,7 @@
 /* START: Home styles */
 
 .home__text-container {
-  @apply flex flex-col items-start justify-start gap-y-2.5 text-black-100;
+  @apply flex flex-col items-start justify-start gap-y-2.5 text-gray-300;
 }
 
 .home__filters {
@@ -88,7 +96,7 @@
 
 /* START: Car Card styles */
 .car-card {
-  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl;
+  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-gray-300  hover:bg-gray-400 hover:shadow-md rounded-3xl;
 }
 
 .car-card__content {
@@ -112,7 +120,7 @@
 }
 
 .car-card__image {
-  @apply relative w-full h-40 my-3 object-contain;
+  @apply relative w-full h-40 my-3 bg-gray-400 object-contain;
 }
 
 .car-card__icon-container {
@@ -138,7 +146,7 @@
 }
 
 .car-details__close-btn {
-  @apply absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full;
+  @apply absolute top-2 right-2 z-10 w-fit p-2 rounded-full;
 }
 
 .car-details__main-image {
@@ -158,7 +166,7 @@
 
 /* START: Footer styles */
 .footer {
-  @apply flex flex-col text-black-100  mt-5 border-t border-gray-100;
+  @apply flex flex-col mt-5 border-t border-gray-100;
 }
 
 .footer__links-container {
@@ -170,7 +178,7 @@
 }
 
 .footer__links {
-  @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
+  @apply flex-1 w-full text-white  flex md:justify-end flex-wrap max-md:mt-10 gap-20;
 }
 
 .footer__link {
